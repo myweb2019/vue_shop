@@ -29,7 +29,7 @@
 
 <script>
   export default {
-    name: "login",
+    name: 'login',
     data() {
       return {
         //这是登录表单的数据绑定对象
@@ -63,7 +63,7 @@
           this.$message.success('登录成功');
           //1.登录成功后将token,保存到客户端sessionStorage中
           //后面的接口都需要带上token,token只有当网址打开时才能生效，所以存到sessionStorage
-          window.sessionStorage.setItem('token',res.data.token);
+          window.sessionStorage.setItem('token', res.data.token);
           //跳转后台首页
           this.$router.push('home')
         })
