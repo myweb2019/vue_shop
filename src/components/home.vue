@@ -9,7 +9,7 @@
       <el-button type="info" @click="logout" size="small">退出</el-button>
     </el-header>
     <!--底部区域-->
-    <el-container>
+    <el-container style="height: 90%">
       <!--左边区域-->
       <el-aside :width="isCollapes?'64px':'200px'">
         <div class="toggle-button" @click="toggleCollapse">|||</div>
