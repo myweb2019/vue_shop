@@ -175,7 +175,10 @@ export default {
   },
   methods: {
     async getUserlist() {
-      const {data: res} = await this.$http.get('roles')
+      const {data: res} = await this.$http.get('roles',{
+        params:{}
+      })
+      console.log(res)
       if (res.meta.status !== 200) return this.$message.error('获取角色列表数据失败！')
       this.userList = res.data
     },
