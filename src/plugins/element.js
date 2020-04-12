@@ -31,7 +31,7 @@ import {
   Cascader,
   Alert,
   Tabs,
-  TabPane
+  TabPane,
 } from "element-ui";
 
 Vue.use(Form);

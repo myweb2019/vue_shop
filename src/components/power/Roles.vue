@@ -234,11 +234,8 @@ export default {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
-      }).catch(() => {
-        this.$message({
-          type: 'info',
-          message: '已取消删除'
-        });
+      }).catch((err) => {
+        return err
       });
       if (confirmResult !== 'confirm') return this.$message.info('你已经取消删除');
       const {data: res} = await this.$http.delete('roles/' + id)
@@ -256,11 +253,8 @@ export default {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
-      }).catch(() => {
-        this.$message({
-          type: 'info',
-          message: '已取消删除'
-        });
+      }).catch((err) => {
+        return err
       });
       if (confirmResult !== 'confirm') return this.$message.info('你已经取消删除');
       const {data: res} = await this.$http.delete('roles/' + role.id + '/rights/' + rightId + '')

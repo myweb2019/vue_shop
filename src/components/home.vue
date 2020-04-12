@@ -11,7 +11,7 @@
     <!--底部区域-->
     <el-container style="height: 90%">
       <!--左边区域-->
-      <el-aside :width="isCollapes?'64px':'200px'">
+      <el-aside :width="isCollapes?'64px':'200px'" style="overflow: hidden">
         <div class="toggle-button" @click="toggleCollapse">|||</div>
         <!--侧边导航栏-->
         <el-menu
@@ -20,9 +20,9 @@
           active-text-color="#409eff"
           unique-opened
           :collapse="isCollapes"
-          :collapse-transition="isCollapes"
           router
           :default-active="Navstatus"
+          :collapse-transition="false"
         >
           <!--一级菜单-->
           <el-submenu :index="item.id+''" v-for="item in menulist" :key="item.id">
@@ -102,6 +102,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
+
   .home-container {
     height: 100%;
   }

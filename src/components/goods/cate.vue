@@ -265,11 +265,8 @@ export default {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
-      }).catch(() => {
-        this.$message({
-          type: 'info',
-          message: '已取消删除'
-        });
+      }).catch((err) => {
+        return err
       });
       if (confirm !== 'confirm') return this.$message.info('已取消删除')
       const {data:res} = await this.$http.delete('categories/'+data.cat_id)
