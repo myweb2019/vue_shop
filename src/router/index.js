@@ -6,6 +6,7 @@ import users from "../components/user/user";
 import Rights from "../components/power/Rights";
 import Roles from "../components/power/Roles";
 import Cate from "../components/goods/cate";
+import params from "../components/goods/params";
 
 
 
@@ -27,6 +28,7 @@ const router = new Router({
         { path: '/rights',component:Rights },
         { path: '/roles',component:Roles },
         { path: '/categories',component:Cate },
+        { path: '/params',component:params },
       ]
     }
   ]
