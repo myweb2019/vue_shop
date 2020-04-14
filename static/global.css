@@ -45,3 +45,10 @@ html, body, #app {
   top: 10px;
 }
 
+.el-step__title {
+  font-size: 13px;
+  line-height: 38px;
+}
+.ql-editor{
+  min-height: 350px;
+}

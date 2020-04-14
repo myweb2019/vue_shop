@@ -99,7 +99,7 @@
                 <el-button type="primary" icon="el-icon-edit" size="mini" @click="showEditDialog(scope.row.attr_id)">
                   编辑
                 </el-button>
-                <el-button type="danger" icon="el-icon-delete" size="mini">删除</el-button>
+                <el-button type="danger" icon="el-icon-delete" size="mini" @click="removeParmas(scope.row.attr_id)">删除</el-button>
               </template>
             </el-table-column>
           </el-table>
