@@ -6,9 +6,6 @@ import router from './router'
 import "./plugins/element";
 import axios from "axios";
 
-
-
-
 //导入全局样式表
 import "../static/global.css";
 import './assets/fonts/iconfont.css'
